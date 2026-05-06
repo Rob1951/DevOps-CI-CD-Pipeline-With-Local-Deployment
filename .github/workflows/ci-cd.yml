@@ -39,7 +39,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Build Docker images
-        run: docker-compose build
+        run: docker compose build
 
       - name: Run containers (simulation deploy)
-        run: docker-compose up -d
+        run: docker compose up -d
